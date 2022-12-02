@@ -1,0 +1,46 @@
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--logo-color);
+}
+
+.edge {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.footer {
+  background-color: var(--dark-bg-section-color);
+}

@@ -1,0 +1,133 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__box {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__accent {
+  color: var(--primary-white-color);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  color: var(--primary-white-color);
+}
+.address__comunication {
+  color: var(--secondary-white-color);
+}
+
+.footer__social {
+  margin-right: 93px;
+}
+
+.footer__social__subtitle {
+  @extend %subtitle;
+
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--primary-white-color);
+}
+
+.footer .social__link {
+  color: var(--primary-white-color);
+  background-color: var(--footer-icon-background);
+
+  transition: backgraund-color var(--transition-link);
+}
+
+.footer .social__link:hover,
+.footer .social__link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--logo-color);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.form__text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.form__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: var(--secondary-white-color);
+  background-color: var(--dark-bg-section-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: outline-color var(--transition-link);
+}
+
+.form__input:focus {
+  outline-color: var(--logo-color);
+}
+
+.form__btn {
+  @extend %btn;
+  @extend %btn-shadow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 200px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 0;
+  cursor: pointer;
+
+  color: var(--primary-white-color);
+  background-color: var(--logo-color);
+}
+
+.form__icon {
+  fill: var(--primary-white-color);
+}

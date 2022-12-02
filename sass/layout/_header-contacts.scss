@@ -1,0 +1,17 @@
+.contacts {
+  @extend %navigation;
+}
+
+.contacts__link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--primary-text-color);
+}
+
+.contacts__icon {
+  fill: currentColor;
+}

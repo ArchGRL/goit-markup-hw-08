@@ -1,0 +1,62 @@
+.hero {
+  --hero-linear-gradient: rgba(47, 48, 58, 0.4);
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(
+      to right,
+      var(--hero-linear-gradient),
+      var(--hero-linear-gradient)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: cover;
+
+  padding: 200px 0;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--bg-hero-color);
+}
+
+.hero__container {
+  width: 696px;
+  padding: 0;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  @extend %btn;
+  @extend %btn-shadow;
+
+  min-width: 216px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+  background-color: var(--logo-color);
+
+  transition: backgraund-color var(--transition-link);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: var(--button-active-color);
+}
