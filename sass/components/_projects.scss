@@ -2,9 +2,28 @@
   @extend %section;
 }
 .projects__list {
+  --indent: 30px;
+  --items: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--indent);
+
+  flex-basis: calc(
+    (100% - var(--indent) * (var(--items) - 1)) / (var(--items))
+  );
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    --items: 2;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
 }
 
 .projects__item {
