@@ -1,22 +1,42 @@
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &__container {
     display: flex;
     align-items: center;
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-  }
-
   &__logo {
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &__accent {
     color: #000000;
+  }
+}
+
+.header-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
   }
 }

@@ -1,11 +1,24 @@
-.menu {
+.button-menu {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 15px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.menu__item:not(:last-child) {
-  margin-right: 8px;
+.button-menu__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
 }
 
 .menu__btn {

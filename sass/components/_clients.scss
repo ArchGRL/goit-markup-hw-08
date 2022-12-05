@@ -1,19 +1,23 @@
+.clients {
+  @extend %section;
+}
 .clients__title {
   @extend %title;
 }
 
-.client__list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
-.client__link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: var(--icon-color);
 
@@ -28,8 +32,14 @@
     color: var(--logo-color);
     border-color: var(--logo-color);
   }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
-.client__icon {
+.clients__icon {
   fill: currentColor;
 }

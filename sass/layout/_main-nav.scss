@@ -1,5 +1,16 @@
 .main-nav {
-  @extend %navigation;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 .main-nav__link {

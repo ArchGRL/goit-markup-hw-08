@@ -11,6 +11,7 @@
 
 // components styles
 @import "./components/hero";
+@import "./components/menu";
 @import "./components/modal";
 @import "./components/benefits";
 @import "./components/social";
@@ -19,6 +20,7 @@
 @import "./components/clients";
 
 // layout styles
+@import "./layout/container";
 @import "./layout/page-header";
 @import "./layout/main-nav";
 @import "./layout/header-contacts";

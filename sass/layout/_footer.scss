@@ -4,18 +4,42 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 74px;
+    padding-left: 61px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .footer__box {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .footer__accent {
@@ -27,10 +51,16 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .address__map {
@@ -41,7 +71,11 @@
 }
 
 .footer__social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social__subtitle {
@@ -67,28 +101,38 @@
 
 .form {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.form__subscription {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    align-items: flex-end;
+  }
 }
 
 .form__text {
+  @extend %subtitle;
+
   margin-bottom: 20px;
-
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--primary-white-color);
 }
 
 .form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   color: var(--secondary-white-color);
   background-color: var(--dark-bg-section-color);
@@ -99,6 +143,11 @@
   outline: 1px solid transparent;
   outline-offset: -1px;
   transition: outline-color var(--transition-link);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .form__input:focus {
@@ -114,7 +163,7 @@
   justify-content: center;
   gap: 10px;
 
-  min-width: 200px;
+  width: 200px;
   padding: 10px 28px;
 
   font-weight: 700;

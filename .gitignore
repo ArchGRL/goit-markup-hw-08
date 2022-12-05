@@ -1,5 +1,9 @@
 #Exclude icons folder
 icons
+original-hero
+original-portfolio
+original-tem
+original-work
 
 # Logs
 logs

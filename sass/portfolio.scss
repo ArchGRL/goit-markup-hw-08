@@ -10,11 +10,14 @@
 @import "./base/reset";
 
 // components styles
+@import "./components/menu";
 @import "./components/button-menu";
 @import "./components/projects";
 @import "./components/social";
+@import "./components/menu";
 
 // layout styles
+@import "./layout/container";
 @import "./layout/page-header";
 @import "./layout/main-nav";
 @import "./layout/header-contacts";

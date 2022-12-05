@@ -1,4 +1,7 @@
 .projects {
+  @extend %section;
+}
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -53,11 +56,25 @@
   --box-border-color: #eeeeee;
 
   padding: 20px 24px;
-  width: 370px;
+  width: 450px;
 
   border-right: 1px solid var(--box-border-color);
   border-bottom: 1px solid var(--box-border-color);
   border-left: 1px solid var(--box-border-color);
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.extension {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-bottom: 56px;
+  }
 }
 
 .card__name {
