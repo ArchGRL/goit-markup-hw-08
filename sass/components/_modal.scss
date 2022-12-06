@@ -7,6 +7,8 @@
   width: 100%;
   height: 100%;
 
+  overflow-y: scroll;
+
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity var(--transition-link), visibility var(--transition-link);
@@ -87,10 +89,6 @@
   margin-bottom: 12px;
 
   color: var(--secondary-text-color);
-
-  @media screen and (min-width: 768px) {
-    line-height: 1.15;
-  }
 }
 
 .modal__group {

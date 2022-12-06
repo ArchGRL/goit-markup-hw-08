@@ -4,6 +4,10 @@ body {
   background-color: var(--primary-white-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
